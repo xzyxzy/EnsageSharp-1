@@ -275,7 +275,11 @@
             {
                 return;
             }
-
+            Console.WriteLine("me.CanMove() == " + me.CanMove().ToString());
+            Console.WriteLine("me.IsRooted() == " + me.IsRooted().ToString());
+            Console.WriteLine("me.IsStunned() == " + me.IsStunned().ToString());
+            Console.WriteLine("" + me.Modifiers.Any(x => x.Name != "modifier_slark_pounce_leash"));
+            Console.WriteLine("" + me.IsAlive);
             if (blink == null)
             {
                 blink = me.FindItem("item_blink");
